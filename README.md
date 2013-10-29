@@ -1,4 +1,5 @@
-fiuminer
+FIU Miner
 ========
+Project lead: Chunqiu Zeng ([@grandzeng](https://github.com/grandzeng))
 
-Fast, integrated, and user-friendly data miner.
+The fast, integrated, and user-friendly data miner.
