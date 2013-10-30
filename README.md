@@ -17,4 +17,3 @@ Core contributors:
 * Hongtai Li ([@HongtaiLi](https://github.com/HongtaiLi))
 * Li Zhen ([@zhengli8341](https://github.com/zhengli8341))
 
-The fast, integrated, and user-friendly data miner.
