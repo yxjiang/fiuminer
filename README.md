@@ -1,6 +1,10 @@
 FIU Miner
 ========
-FIU-Miner is a Fast, Integrated, and User-friendly system to ease data analysis. FIU-Miner allows users to rapidly configure a complex data analysis task without writing a single line of code. It also helps users conveniently import and integrate different analysis programs. Further, it significantly balances resource utilization and task execution in heterogeneous environments.
+FIU-Miner is a Fast, Integrated, and User-friendly system to ease data analysis. 
+FIU-Miner allows users to rapidly configure a complex data analysis task without writing a single line of code. 
+It also helps users conveniently import and integrate different analysis programs. 
+Further, it significantly balances resource utilization and task execution in heterogeneous environments.
+The details of FIU-Miner is available at the KDD 2013 demo paper - [FIU-Miner: a Fast, Integrated, and User-friendly system for data mining in distributed environment](http://users.cs.fiu.edu/~yjian004/paper/kdd-2013-fiuminer.pdf).
 
 Project lead: 
 * Chunqiu Zeng ([@grandzeng](https://github.com/grandzeng))
