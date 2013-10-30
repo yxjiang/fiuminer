@@ -12,7 +12,7 @@ Project lead:
 Core contributors:
 * Jingxuan Li ([@iamlee1633](https://github.com/iamlee1633))
 * Lei Li ([@lli003](https://github.com/lli003))
-* Chao Shen ([@sasfish](https://github.com/sawfish))
+* Chao Shen ([@sawfish](https://github.com/sawfish))
 * Yexi Jiang ([@yxjiang](https://github.com/yxjiang))
 * Hongtai Li ([@HongtaiLi](https://github.com/HongtaiLi))
 * Li Zhen ([@zhengli8341](https://github.com/zhengli8341))
