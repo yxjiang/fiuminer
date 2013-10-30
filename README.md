@@ -6,6 +6,8 @@ It also helps users conveniently import and integrate different analysis program
 Further, it significantly balances resource utilization and task execution in heterogeneous environments.
 The details of FIU-Miner is available at the KDD 2013 demo paper - [FIU-Miner: a Fast, Integrated, and User-friendly system for data mining in distributed environment](http://users.cs.fiu.edu/~yjian004/paper/kdd-2013-fiuminer.pdf).
 
+The online demo for FIU-Miner is available at http://datamining-node08.cs.fiu.edu/FIU-Miner.
+
 Project lead: 
 * Chunqiu Zeng ([@grandzeng](https://github.com/grandzeng))
 
