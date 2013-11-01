@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jms="http://www.springframework.org/schema/jms" xmlns:amq="http://activemq.apache.org/schema/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/jms
+http://www.springframework.org/schema/jms/spring-jms.xsd
+http://activemq.apache.org/schema/core
+http://activemq.apache.org/schema/core/activemq-core.xsd">
+
+
+	<bean id="mysql-ds" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="???" />
+		<property name="username" value="???" />
+		<property name="password" value="???" />
+		<property name="maxActive" value="200" />
+		<property name="maxIdle" value="10" />
+		<property name="minIdle" value="5" />
+		<property name="testOnBorrow" value="true" />
+		<property name="validationQuery" value="select 1" />
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxOpenPreparedStatements" value="10" />
+	</bean>
+
+	<amq:broker brokerName="lsdaBroker"
+		xmlns="http://activemq.apache.org/schema/core">
+		<amq:persistenceAdapter>
+			<amq:jdbcPersistenceAdapter dataSource="#mysql-ds" />
+		</amq:persistenceAdapter>
+		<amq:transportConnectors>
+			<amq:transportConnector name="default"
+				uri="tcp://localhost:61619" />
+		</amq:transportConnectors>
+		<amq:plugins>
+			<amq:simpleAuthenticationPlugin>
+				<amq:users>
+					<amq:authenticationUser username="admin"
+						password="admin" groups="admins,publishers,consumers" />
+					<amq:authenticationUser username="publisher"
+						password="admin" groups="publishers,consumers" />
+					<amq:authenticationUser username="lsda"
+						password="admin" groups="publishers,consumers" />
+					<amq:authenticationUser username="consumer"
+						password="admin" groups="consumers" />
+					<amq:authenticationUser username="guest"
+						password="guest" groups="guests" />
+				</amq:users>
+			</amq:simpleAuthenticationPlugin>
+		</amq:plugins>
+	</amq:broker>
+</beans>
